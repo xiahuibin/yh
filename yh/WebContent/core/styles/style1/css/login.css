@@ -1,0 +1,63 @@
+/*css reset-uimaker.com版权所有*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td , i{
+	margin:0;
+	padding:0;
+	border:0;
+	font-weight:inherit;
+	font-style:inherit;
+	font-size:100%;
+	font-family:inherit;
+	vertical-align:baseline;
+}
+body {line-height:1.5;}
+table {border-collapse: collapse;border-spacing:0;}
+caption, th, td ,b,strong{text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}	
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+em,cite{font-style:normal;}
+
+
+body { background:#fff; font: 13px/1.5 'Microsoft Yahei',Tahoma,'微软雅黑';color:#000;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;color:#111;}
+a {text-decoration:none;cursor:pointer;}
+dl, dt, dd, ol, ul, li{ list-style:none;}
+
+html,body{overflow: hidden;height:100%;width: 100%;}
+#container{position:relative;background:url(../img/login/loginlight.png) no-repeat center center;background-color:#0170a4;height: 100%;}
+
+/*页面主体*/
+#bd{min-height:430px;}
+#main{ position:absolute;width:640px; height:426px; margin:0 auto 0; background:url(../img/login/loginbox.png) no-repeat;min-height:443px;top: 45%;left: 50%;margin-top: -210px;margin-left: -320px;}
+
+/*logo*/
+.login-box #logo{position:absolute; left:68px; top:7px; width:68px; height:72px; background:url(../img/login/loginlogo.png) no-repeat;}
+.login-box h1{position:absolute; left:99px; top:107px; width:329px; height:62px; background:url(../img/login/loginname.png) no-repeat;}
+
+/*登陆框*/
+.login-box .input{position:absolute; left:140px; width:311px; height:39px;}
+.login-box .input label{height:37px; line-height:37px; font-size:14px;}
+.login-box .input input{position:absolute; left:67px; top:0; width:176px; height:39px; *line-height:39px;  padding:0 20px 0 48px; border:none; outline:none; }
+.login-box .username{ top:217px;}
+.login-box .username input{background:url(../img/login/userinput.png);font-size:14px; font-weight:bold;color:#33AED8;}
+.login-box .psw{ top:267px;}
+.login-box .psw input { background:url(../img/login/passwordinput.png);}
+.login-box .validate{ position:relative; top:317px;}
+.login-box .validate input{width:204px; padding:0 20px 0 20px; background:url(../img/login/yzminput.png);font-size:14px;}
+.login-box .validate .value{ position:absolute; right:33px; top:11px; height:16px; line-height:16px; color:#fff; font-size:16px;}
+
+/*风格*/
+.styleArea{ position:absolute; left:409px; top:217px;}
+.styleArea .styleWrap{width:133px;height:39px;background:url(../img/login/loginstyleinput.png);}
+.styleArea .iselect-wrapper{top:2px;left:2px;border:none;width:105px;height:36px;line-height:36px;}
+.styleArea .iselect-wrapper .iselect{height:39px;width:133px;*top:10px;}
+.styleArea .iselect-wrapper .iselwrap-val{padding-left:10px;font-size:14px;}
+
+/*登录按钮*/
+#btn{ position:absolute; left: 275px;top: 330px;}
+#btn input{ width:133px; height:39px; background:url(../img/login/loginbtn.png); border:none; outline:none; cursor:pointer; font-size:16px; font-weight:bold;color: #ffffff;}
+#btn input:hover{background:url(../img/login/loginbtn_active.png);}
+
+/*页脚*/
+#ft{position:absolute;bottom:40px;left:0;right:0;height:12px;width:100%; text-align:center; line-height:12px;color:#095071;}
