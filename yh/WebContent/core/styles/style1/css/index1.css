@@ -813,7 +813,38 @@ ul li {
 	margin-right: 3px;
     color: #fff;	
 }
-
+.crumbs{
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	background-color: #f1f1f1;
+    border-bottom: 1px solid #d7d6d6;
+    border-top: 1px solid #fff;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.crumbs .nav-header{
+	width: 236px;
+	border-right: 1px solid #C4C4C4;
+}
+.crumbs .nav-header .pf-name{
+	font-size: 14px;
+	margin-left: 65px;
+	padding-left: 25px;
+	font-weight: bolder;
+	background: url(../img/systop/home.png) left center no-repeat;
+}
+.crumbs .crumbs-label{
+	font-size: 14px;
+	margin-left: 10px;
+	padding-left: 22px;
+	font-weight: bolder;
+	background: url(../img/systop/bar_ico.png) left center no-repeat;
+}
 .mt8 {
 	margin-top: 8px;
 }

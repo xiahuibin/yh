@@ -409,6 +409,7 @@ function initMenu(el) {
 										YH.ccmenu = null;
 									} 
 								}
+								$(".crumbs .crumbs-label").text($(this).text());
 								dispParts($(this).attr("url"), $(this).attr("openFlag"));
 							});
 						});
@@ -419,6 +420,7 @@ function initMenu(el) {
 								} 
 								YH.ccmenu = $(this);
 								YH.ccmenu.addClass("menu-selected");
+								$(".crumbs .crumbs-label").text($(this).text());
 								dispParts($(this).attr("url"), $(this).attr("openFlag"));
 							});
 						})

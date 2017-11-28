@@ -67,15 +67,20 @@ String type1 = request.getParameter("type")==null?"":request.getParameter("type"
 				<li class="mt8" id="time"></li>
 			</ul>
 		</div>
-		
-		<!-- <div class="top_right">
-			<ul>
-				<li><input type="text" id='scon' value="" /></li>
-				<li><a href="javascript:nsearch()"></a></li>
-			</ul>
-		</div> -->
-
 		<div class="clear"></div>
+		<!-- crumbs -->
+		<div class="crumbs">
+			<div class="fl">
+				<div class="nav-header">
+					<span class="pf-name">功能导航</span>
+				</div>
+			</div>
+			<div class="fl">
+				<span class="crumbs-label">首页</span>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- crumbs end -->
 		
 	</div>
 
