@@ -86,6 +86,7 @@ function doInit() {
 function doInitData(){
   var data = {
       //fix:true,      //默认第一个不能收缩
+
  panel:'menuList',
  index:'1',
  data:[{title:'个人考勤'}]
@@ -128,7 +129,7 @@ function loadData(){
 
 function mouseOverHander(show1td){
   show1td.onmouseover = function(){
-    show1td.style.backgroundColor = "#edf6db";
+    show1td.style.backgroundColor = "#C0EFFF";
   }
   show1td.onmouseout = function(){
     show1td.style.backgroundColor = "#FFFFFF";
@@ -194,6 +195,7 @@ function delFlowType(){
       parent.leftFrame.location.reload();
     //histroy.back();
     //转到列表页
+
  	}else{
       alert(json.rtMsrg);
   	}

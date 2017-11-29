@@ -6,9 +6,9 @@
   width: 20px;
 }
 .YearMonth {
-  display: inline-block !important;
   margin-bottom: 0 !important;
   width: 90px;
+  text-align: center;
 }
 .NextMonth {
   background: url("../img/subpages/cal_arrow.png") no-repeat scroll -35px center transparent;

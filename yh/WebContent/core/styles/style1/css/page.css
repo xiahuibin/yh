@@ -1,6 +1,7 @@
 @CHARSET "UTF-8";
 .pgPanel {
-	height:35px;
+	height: 30px;
+    margin: 8px 0px;
 }	
 .pgPanel div {
 	float:left;

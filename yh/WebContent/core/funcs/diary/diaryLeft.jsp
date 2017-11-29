@@ -42,7 +42,7 @@ function doInit(){
           <table cellspacing=0 cellpadding=0 width="100%" border=0>
             <tr>
               <td width="20%" align=right><a class="PrevMonth" href="javascript:setMon(-1);" title="上一月"></a></td>
-              <td align=middle width="60%" id="yearMonth" class="YearMonth"></td>
+              <td valign="middle" width="60%" id="yearMonth" class="YearMonth"></td>
               <td width="20%" align=left><a class="NextMonth" href="javascript:setMon(1);" title="下一月"></a></td>
             </tr>
           </table>

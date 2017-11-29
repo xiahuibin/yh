@@ -181,18 +181,10 @@ function triaReg() {
 <form action="uploadLicense.jsp" enctype="multipart/form-data" id="bbsForm" name="bbsForm" method="post">
 
 <br>
-<table class="TableTop" style="width: 80%" align="center">
-  <tr>
-    <td class="left">
-    </td>
-    <td class="center" align="center">
-    <%=StaticData.SOFTTITLE%>
-    </td>
-    <td class="right">
-    </td>
-  </tr>
-</table>
 <table class="TableBlock no-top-border" width="80%" align="center">
+  <tr>
+    <td colspan="2" class="TableHeader"><%=StaticData.SOFTTITLE%></td>
+   </tr>
   <tr class="TableData">
     <td nowrap  width="150"><b>&nbsp;软件名称：</b></td>
     <!-- <td nowrap id="sysname"> </td> -->
