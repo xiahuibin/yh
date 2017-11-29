@@ -244,7 +244,7 @@ function deptFunc(){
    <tr>
     <td nowrap class="TableData">上级部门：</td>
       <td class="TableData">
-      <select id="deptParent" name="deptParent" style="height:22px;FONT-SIZE: 12pt;">
+      <select id="deptParent" name="deptParent" >
         </select>
       </td>
    </tr>

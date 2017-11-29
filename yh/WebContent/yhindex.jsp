@@ -94,7 +94,7 @@ String type1 = request.getParameter("type")==null?"":request.getParameter("type"
 					<div class="leftmenu-north-lv2" style="display: none;"></div>
 					<div class="leftmenu-body" style="top: 0px;">
 						<div>
-							<ul class="menu-lv1" style='padding-top: 15px;'>
+							<ul class="menu-lv1">
 								<li style="height: auto;">
 									<ul id="menu" class="menu-lv2">
 									</ul>

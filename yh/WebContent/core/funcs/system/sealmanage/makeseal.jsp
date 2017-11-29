@@ -246,8 +246,8 @@ function deptFunc(){
   <tr>
     <td class="TableContent">印章ID</td>
     <td class="TableData">
-    	<input name="SealID_prefix" id="SealID_prefix" class="BigStatic" readonly size=6 maxlength="6" value="">-<input name="SealID_mid" id="SealID_mid" onblur="getCounter();" class="BitInput" size=2 maxlength="2">-<input name="SealID_counter" id="SealID_counter" class="BigStatic" readonly size=6 maxlength="6">
-    	<input type="hidden" name="SealID" id="SealID" class="BitInput" size=4 maxlength="4">	
+    	<input name="SealID_prefix" id="SealID_prefix" class="BigStatic" readonly size=6 maxlength="6" value="">-<input name="SealID_mid" id="SealID_mid" onblur="getCounter();" class="BigInput" size=2 maxlength="2">-<input name="SealID_counter" id="SealID_counter" class="BigStatic" readonly size=6 maxlength="6">
+    	<input type="hidden" name="SealID" id="SealID" class="BigInput" size=4 maxlength="4">	
     </td>
     <td align="center" class="TableData" width="250" rowspan="8" colspan=2>
        <OBJECT 
@@ -271,29 +271,28 @@ function deptFunc(){
   <tr>
     <td  class="TableContent" width=80>印章名称</td>
     <td class="TableData">
-    	<input type="text" name="SealName" id="SealName" class="BitInput" maxlength="32">	
+    	<input type="text" name="SealName" id="SealName" class="BigInput" maxlength="32">	
     <br></td>
   </tr>
   <tr>
     <td  class="TableContent">印章密码</td>
     <td class="TableData">
-    	<input type="password" name="SealPwd" id="SealPwd" class="BitInput" maxlength="32">	
+    	<input type="password" name="SealPwd" id="SealPwd" class="BigInput" maxlength="32">	
     <br></td>
   </tr>
   <tr>
     <td class="TableContent">印章单位</td>
     <td class="TableData">
-   <select id="dept" name="dept" style="height:22px;FONT-SIZE: 12pt;">
-        </select>
+   <select id="dept" name="dept"></select>
     </td>
   </tr>
   <tr>
     <td  class="TableContent">图片宽度</td>
-    <td class="TableData"><input name="SealWidth" id="SealWidth" maxlength="32"> mm</td>
+    <td class="TableData"><input name="SealWidth" id="SealWidth" maxlength="32" class="BigInput" /> mm</td>
   </tr>
   <tr>
     <td class="TableContent">图片高度</td>
-    <td class="TableData"><input name="SealHeight" id="SealHeight" maxlength="32"> mm</td>
+    <td class="TableData"><input name="SealHeight" id="SealHeight" maxlength="32" class="BigInput" /> mm</td>
   </tr>
   <tr>
     <td class="TableContent">印章大小</td>

@@ -53,7 +53,7 @@ function delSysFunction(menuId) {
     </tr>
     <tr class="TableControl">
       <td colspan="3" align="center">
-        <a class="ToolBtn2" href="<%=contextPath %>/core/funcs/menu/sysfunctioninput.jsp?menuId=<%=menuId %>&menuName=<%=menuName %>&menuFlag=<%=menuFlag %>"" target="contentFrame">
+        <a class="ToolBtn" href="<%=contextPath %>/core/funcs/menu/sysfunctioninput.jsp?menuId=<%=menuId %>&menuName=<%=menuName %>&menuFlag=<%=menuFlag %>"" target="contentFrame">
           <span><img align="absmiddle" src="<%=contextPath %>/core/styles/imgs/green_plus.gif"></img>添加子菜单项</span>
         </a>   
       </td>

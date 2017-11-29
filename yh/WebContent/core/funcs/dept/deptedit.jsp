@@ -231,6 +231,7 @@ function deptFunc(){
     <td nowrap class="TableData">部门排序号：</td>
     <td nowrap class="TableData">
         <input type="text" name="deptNo" id="deptNo" class="BigInput" size="10" maxlength="200" value="">&nbsp;用于处于同一层次部门的排序，以及用户列表的排序
+
         <font style='color:red'>*</font>
     </td>
    </tr>
@@ -256,7 +257,7 @@ function deptFunc(){
    <tr>
     <td nowrap class="TableData">上级部门：</td>
     <td nowrap class="TableData">
-    <select id="deptParent" name="deptParent" style="height:22px;FONT-SIZE: 12pt;">
+    <select id="deptParent" name="deptParent" >
         </select>
     </td>
    </tr>

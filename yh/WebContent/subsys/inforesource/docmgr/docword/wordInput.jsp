@@ -173,7 +173,7 @@ function checkWord(){
    <tr>
     <td nowrap class="TableData">所属类别：</td>
       <td class="TableData">
-      <select id="parentId" name="parentId" style="height:22px;FONT-SIZE: 12pt;">
+      <select id="parentId" name="parentId" >
       </select>
       </td>
    </tr>

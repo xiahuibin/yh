@@ -13,7 +13,7 @@ ul {
 }
 
 ul li a:link, ul li a:visited{
-   color: #275175;
+   color: #ffffff;
    font-size:9pt;
    display: block;
    text-decoration: none;
@@ -103,10 +103,9 @@ table.LeftMenu {
 }
 
 .head {
-  background: none repeat scroll 0 0 #C0EFFF;
-  border-left: 1px solid #85b6df;
-  border-right: 1px solid #85b6df;
-  border-bottom: 1px solid #85b6df;
+  background: #3B9FE1;
+  border: 1px solid #2A83CF;
+  border-bottom: none;
   padding-left: 5px;
   line-height: 32px;
   height: 32px;

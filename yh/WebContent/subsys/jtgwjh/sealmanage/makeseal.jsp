@@ -416,7 +416,7 @@ function checkForm(){
     <tr>
     <td class="TableContent">是否启用</td>
     <td class="TableData">
-   <select id="isFlag" name="isFlag" style="height:22px;FONT-SIZE: 12pt;">
+   <select id="isFlag" name="isFlag" >
    <option value="0">是</option>
       <option value="1">否</option>
         </select>

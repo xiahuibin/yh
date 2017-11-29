@@ -207,7 +207,7 @@ function triaReg() {
   </tr>
   <tr class="TableData">
     <td nowrap  width="150"><b>&nbsp;版权所有：</b></td>
-    <td nowrap ><%=StaticData.SOFTCOMPANY%> <a href="http://<%=StaticData.YH_OA_SITE%>" target="_blank">http://<%=StaticData.YH_OA_SITE%></a></td>
+    <td nowrap ><%=StaticData.SOFTCOMPANY%> <!-- <a href="http://<%=StaticData.YH_OA_SITE%>" target="_blank">http://<%=StaticData.YH_OA_SITE%></a> --></td>
   </tr>
   <tr  class="TableData" style="display: none;">
     <td nowrap width="150"><b>&nbsp;HTTP服务器软件：</b></td>
@@ -236,7 +236,7 @@ function triaReg() {
   <tr class="TableData">
     <td nowrap  width="150"><b>&nbsp;用户单位：</b></td>
     <!--<td nowrap  id="unitName"></td>-->
-    <td nowrap><span>木星科技有限公司</span></td>
+    <td nowrap><span>灵璧人武部</span></td>
   </tr>
   <tr class="TableData" id="regUnitNameTr" style="display:none;">
     <td nowrap width="150"><b>&nbsp;注册信息用户单位：</b></td>
@@ -275,13 +275,13 @@ function triaReg() {
     <td nowrap width="150"><b>&nbsp;系统标识码：</b></td>
     <td id="serialId" nowrap></td>
   </tr>
-  <tr class="TableData" id="uploadFile">
+  <!-- <tr class="TableData" id="uploadFile">
     <td nowrap width="150"><b>&nbsp;上传注册文件：</b></td>
     <td nowrap>
       <input type="file" id="file" name="file">
       &nbsp;<a href="javascript:void(0)" onclick="submitForm();" class="ToolBtn" ><span>注册</span></a>
     </td>
-  </tr>
+  </tr> -->
   <tr class="TableData" style="display:none;">
     <td nowrap  colspan="2" align="center">
       <a href="javascript:void(0)" onclick="location='<%=contextPath%>/core/funcs/system/info/detail.jsp'" class="ToolBtn"><span>查看注册文件</span></a>

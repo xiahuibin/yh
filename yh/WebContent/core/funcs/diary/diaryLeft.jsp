@@ -29,9 +29,9 @@ function doInit(){
 <body onload="doInit()">
 <div class="container">
 	<div id="left_top">
-	  <a class="ToolBtn2" href="<%=contextPath %>/core/funcs/diary/new/index.jsp" target="diaryBody" title="新建日志"><span>新建</span></a>
-	  <a class="ToolBtn2" href="<%=contextPath %>/core/funcs/diary/query/index.jsp" target="diaryBody" title="查询日志"><span>查询</span></a>
-	  <a class="ToolBtn2" href="<%=contextPath %>/core/funcs/diary/last.jsp" target="diaryBody" title="最新10篇日志"><span>最新</span></a>  
+	  <a class="ToolBtn" href="<%=contextPath %>/core/funcs/diary/new/index.jsp" target="diaryBody" title="新建日志"><span>新建</span></a>
+	  <a class="ToolBtn" href="<%=contextPath %>/core/funcs/diary/query/index.jsp" target="diaryBody" title="查询日志"><span>查询</span></a>
+	  <a class="ToolBtn" href="<%=contextPath %>/core/funcs/diary/last.jsp" target="diaryBody" title="最新10篇日志"><span>最新</span></a>  
 	</div>
   <div id="calendar_table">
      <table width="100%" class="BlockTop">
@@ -124,6 +124,7 @@ function doInit(){
        </td>
        <td class="center" align="center">
         最新点评
+
        </td>
        <td class="right">
        </td>

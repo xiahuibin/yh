@@ -55,21 +55,21 @@ function checkForm(){
 <table class="TableBlock" width="70%" align="center">
    <tr class="TableData">
       <td>群名称：</td>
-      <td><input type='text' id='groupName' name='groupName'><font color='red'> *必填</font></td>
+      <td><input type='text' id='groupName' name='groupName' class="BigInput"><font color='red'> *必填</font></td>
    </tr>
    <tr class="TableData">
       <td>群排序号：</td>
-      <td><input type='text' size="6" id='groupNo' name='groupNo'><font color='red'> *必填</font></td>
+      <td><input type='text' size="6" id='groupNo' name='groupNo' class="BigInput"><font color='red'> *必填</font></td>
    </tr>
     <tr class="TableData">
     <td>群主题：</td>
-    <td><input type='text' size="15" id='groupSubject' name='groupSubject'><font color='red'> *必填</font></td>
+    <td><input type='text' size="15" id='groupSubject' name='groupSubject' class="BigInput"><font color='red'> *必填</font></td>
    </tr>
    <tr class="TableData">
       <td>请选择群成员：</td>
       <td>
         <input type='hidden' id='groupUid' name='groupUid'>
-        <textarea name='userName' id='userName' cols='30' rows='4' class='BigStatic'></textarea>
+        <textarea name='userName' id='userName' cols='44' rows='4' class='BigStatic' class="BigInput"></textarea>
         <a href="javascript:;" class="orgAdd" onclick="selectUser(['groupUid','userName'])">添加</a>
         <a href="javascript:;" class="orgClear" onclick=" $('groupUid').value='',$('userName').value='' ">清空</a>
         <font color='red'> *必填</font>
@@ -77,11 +77,11 @@ function checkForm(){
    </tr>
     <tr class="TableData">
     <td>群介绍：</td>
-    <td><textarea id="groupIntroduction" col="40" row="10" name="groupIntroduction"></textarea></td>
+    <td><textarea id="groupIntroduction" cols="44" rows="4" name="groupIntroduction" class="BigInput"></textarea></td>
    </tr>
   <tr class="TableData">
     <td>群备注：</td>
-    <td><textarea id="groupRemark" col="40" row="10" name="groupRemark"></textarea></td>
+    <td><textarea id="groupRemark" cols="44" rows="4" name="groupRemark" class="BigInput"></textarea></td>
    </tr>
    
    <tr class="TableData">

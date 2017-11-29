@@ -949,14 +949,14 @@ a.ToolBtn:hover span, a.ToolBtn-active span {
   background-position: right -75px;
   color: #FFFFFF !important;
 }
-a.ToolBtn2 {
+a.ToolBtn {
 	height: 25px;
   background: url("../img/subpages/tool_btn2.png") no-repeat scroll left 0 transparent;
   display: inline-block;
   padding-left: 5px;
   text-decoration: none !important;
 }
-a.ToolBtn2 span {
+a.ToolBtn span {
   background: url("../img/subpages/tool_btn2.png") no-repeat scroll right -50px transparent;
   color: #36434E !important;
   cursor: pointer;
@@ -966,10 +966,10 @@ a.ToolBtn2 span {
   overflow: hidden;
   padding: 0 13px 0 8px;
 }
-a.ToolBtn2:hover {
+a.ToolBtn:hover {
   background-position: left -25px;
 }
-a.ToolBtn2:hover span {
+a.ToolBtn:hover span {
   background-position: right -75px;
   color: #FFFFFF !important;
   font-weight: bold;

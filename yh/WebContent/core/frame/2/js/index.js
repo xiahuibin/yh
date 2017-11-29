@@ -367,11 +367,11 @@ function initMenu(el) {
 							var cl = menuData[i].leaf == 0 ? "menu-close" : "";
 							s.push('<li id="'+menuData[i].id+'" class="pmenu '+ cl +'" leaf="'+menuData[i].leaf+'" url="'+ menuData[i].url +
 								'" openFlag="'+menuData[i].openFlag+'" ><a href="javascript:void(0)">');
-							s.push("<table style='margin-left:50px'><tr><td style='padding-top:5px;'><img src='");
+							s.push("<img src='");
 							s.push(contextPath + "/core/styles/imgs/menuIcon/" + menuData[i].icon);
-							s.push("' width='20px' height='20px' /></td><td>");
+							s.push("' width='20px' height='20px' />");
 							s.push(menuData[i].text);
-							s.push("</td></tr></table></a></li>");
+							s.push("</a></li>");
 							if(menuData[i].leaf  == 0 && 
 								menuData[i].children && menuData[i].children.length > 0){
 								s.push('<li style="height: auto; display: none;"><ul class="menu-lv3">')
@@ -391,7 +391,7 @@ function initMenu(el) {
 								if(YH.cmenu){  
 									if(YH.cmenu.attr("leaf") == 0){	 
 										if(YH.cmenu.attr("id") == $(this).attr("id")){
-											YH.cmenu.next().toggle("slow");
+											YH.cmenu.next().slideToggle();
 											return;
 										}
 										YH.cmenu.next().hide(true);
@@ -401,7 +401,7 @@ function initMenu(el) {
 								YH.cmenu = $(this);
 								YH.cmenu.addClass("menu-selected"); 
 								if($(this).attr("leaf") == 0){ 
-									$(this).next().show(true);
+									$(this).next().slideDown();
 									return;
 								}else{
 									if(YH.ccmenu){

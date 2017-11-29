@@ -470,7 +470,7 @@ function deleteAttachPic(flag){
     <td colspan=2 class="TableHeader">IE浏览器窗口标题</td>
    </tr>
    <tr>
-    <td nowrap class="TableData">IE浏览器窗口标题：</td>
+    <td nowrap class="TableContent">IE浏览器窗口标题：</td>
     <td nowrap class="TableData">
         <input type="text" name="ieTitle" id="ieTitle" class="BigInput" size="40" maxlength="100" value="" style="">&nbsp;
     </td>
@@ -479,13 +479,13 @@ function deleteAttachPic(flag){
     <td colspan=2 class="TableHeader">主界面</td>
    </tr>
    <tr>
-    <td nowrap class="TableData">顶部大标题文字：</td>
+    <td nowrap class="TableContent">顶部大标题文字：</td>
     <td nowrap class="TableData">
         <input type="text" name="bannerText" id="bannerText" class="BigInput" size="40" maxlength="100" value="">&nbsp;
     </td>
    </tr>
    <tr>
-    <td nowrap class="TableData">顶部大标题样式：</td>
+    <td nowrap class="TableContent">顶部大标题样式：</td>
     <td nowrap class="TableData">
         <input type="hidden" name="FONT_FAMILY" value="">
         <input type="hidden" name="FONT_SIZE" value="">
@@ -506,7 +506,7 @@ function deleteAttachPic(flag){
     </td>
    </tr>
    <tr>
-    <td nowrap class="TableData">经典界面-顶部图标：</td>
+    <td nowrap class="TableContent">经典界面-顶部图标：</td>
     <td nowrap class="TableData">
        <div id="editPic" style="display:none"><span><a href="javascript:;" id="attachmentNameShow" name="attachmentNameShow"></a></span>
         <input type="button" value="恢复默认" class="BigButton" onClick="deleteAttachPic(0);"></div>
@@ -520,26 +520,26 @@ function deleteAttachPic(flag){
     </td>
    </tr>
    <tr>
-    <td nowrap class="TableData">经典界面-顶部图标宽度：</td>
+    <td nowrap class="TableContent">经典界面-顶部图标宽度：</td>
     <td nowrap class="TableData">
         <input type="text" name="imgWidth" id="imgWidth" class="BigInput" size="10" maxlength="100" value="">&nbsp;像素
       &nbsp;(建议宽度小于550像素)
     </td>
    </tr>
    <tr>
-    <td nowrap class="TableData">经典界面-顶部图标高度：</td>
+    <td nowrap class="TableContent">经典界面-顶部图标高度：</td>
     <td nowrap class="TableData">
         <input type="text" name="imgHeight" id="imgHeight" class="BigInput" size="10" maxlength="100" value="">&nbsp;像素&nbsp;(建议高度小于64像素)
     </td>
    </tr>
    <tr>
-    <td nowrap class="TableData">经典界面-底部状态栏置中文字：</td>
+    <td nowrap class="TableContent">经典界面-底部状态栏置中文字：</td>
     <td nowrap class="TableData">
         <textarea name="statusText" id="statusText" class="BigInput" cols="44" rows="3"></textarea><br>多行文字可以实现轮换显示
     </td>
    </tr>
    <tr>
-    <td nowrap class="TableData">WebOS界面-顶部图标：</td>
+    <td nowrap class="TableContent">WebOS界面-顶部图标：</td>
     <td nowrap class="TableData">
        <div id="editPic2" style="display:none"><span><a href="javascript:;" id="attachmentNameShow2" name="attachmentNameShow2"></a></span>
         <input type="button" value="恢复默认" class="BigButton" onClick="deleteWebosLogo();"></div>
@@ -554,19 +554,19 @@ function deleteAttachPic(flag){
     </td>
    </tr>
    <tr>
-   <td nowrap class="TableData">WebOS界面-顶部图标宽度：</td>
+   <td nowrap class="TableContent">WebOS界面-顶部图标宽度：</td>
     <td nowrap class="TableData">
         <input type="text" name="imgWidth2" id="imgWidth2" class="BigInput" size="10" maxlength="100" value="">&nbsp;像素&nbsp;(建议宽度小于230像素)
     </td>
    </tr>
    <tr>
-    <td nowrap class="TableData">WebOS界面-顶部图标高度：</td>
+    <td nowrap class="TableContent">WebOS界面-顶部图标高度：</td>
     <td nowrap class="TableData">
         <input type="text" name="imgHeight2" id="imgHeight2" class="BigInput" size="10" maxlength="100" value="">&nbsp;像素&nbsp;(建议高度小于80像素)
     </td>
    </tr>
    <tr style="display:none;">
-    <td nowrap class="TableData">自定义桌面背景图片：</td>
+    <td nowrap class="TableContent">自定义桌面背景图片：</td>
     <td nowrap class="TableData">
         <select name="myTableBkGround" id="myTableBkGround">
           <option value="-1" >禁止自定义</option>
@@ -584,14 +584,14 @@ function deleteAttachPic(flag){
     <td colspan=2 class="TableHeader">登录界面</td>
    </tr>
    <tr style="display:none;">
-    <td nowrap class="TableData">登录界面模板：</td>
+    <td nowrap class="TableContent">登录界面模板：</td>
     <td nowrap class="TableData">
         <select name="template" id="template">
         </select>
     </td>
    </tr>
    <tr>
-    <td nowrap class="TableData">登录界面图片：</td>
+    <td nowrap class="TableContent">登录界面图片：</td>
     <td nowrap class="TableData">
        <div id="editPic1" style="display:none"><span><a href="javascript:;" id="attachmentNameShow1" name="attachmentNameShow1"></a></span>
         <input type="button" value="恢复默认" class="BigButton" onClick="deleteAttachPic(1);"></div>
@@ -605,13 +605,13 @@ function deleteAttachPic(flag){
     </td>
    </tr>
    <tr style="display:none;">
-    <td nowrap class="TableData">选择界面布局：</td>
+    <td nowrap class="TableContent">选择界面布局：</td>
     <td nowrap class="TableData">
         <input type="checkbox" name="loginInterface" id="loginInterface" ><label for="loginInterface">允许用户登录时选择界面布局</label>
     </td>
    </tr>
    <tr style="display:none;">
-    <td nowrap class="TableData">默认界面布局：</td>
+    <td nowrap class="TableContent">默认界面布局：</td>
     <td nowrap class="TableData">
         <select name="ui" id="ui">
         <option value="0">标准界面</option>
@@ -619,7 +619,7 @@ function deleteAttachPic(flag){
     </td>
    </tr>
    <tr style="display:none;">
-    <td nowrap class="TableData">网站备案号：</td>
+    <td nowrap class="TableContent">网站备案号：</td>
     <td nowrap class="TableData">
         <input type="text" name="miibeian" id="miibeian" class="BigInput" size="25" value="">
     </td>
@@ -628,13 +628,13 @@ function deleteAttachPic(flag){
     <td colspan=2 class="TableHeader">界面主题</td>
    </tr>
    <tr style="display:none;">
-    <td nowrap class="TableData">选择界面主题：</td>
+    <td nowrap class="TableContent">选择界面主题：</td>
     <td nowrap class="TableData">
         <input type="checkbox" name="themeSelect" id="themeSelect" value="1"><label for="themeSelect">允许用户选择界面主题</label>
     </td>
    </tr>
    <tr style="display:none;">
-    <td nowrap class="TableData">默认界面主题：</td>
+    <td nowrap class="TableContent">默认界面主题：</td>
     <td nowrap class="TableData">
         <select name="theme" id="theme">
         </select>
@@ -644,7 +644,7 @@ function deleteAttachPic(flag){
     <td colspan=2 class="TableHeader">界面风格</td>
    </tr>
    <tr style="display:none;">
-    <td nowrap class="TableData">缺省界面风格：</td>
+    <td nowrap class="TableContent">缺省界面风格：</td>
     <td nowrap class="TableData">
         <select name="style" id="style">
           <option id="classic" value="0">经典界面</option>
@@ -657,19 +657,19 @@ function deleteAttachPic(flag){
     <td colspan=2 class="TableHeader">用户头像</td>
    </tr>
    <tr>
-    <td nowrap class="TableData">用户上传头像：</td>
+    <td nowrap class="TableContent">用户上传头像：</td>
     <td nowrap class="TableData">
         <input type="checkbox" name="avatarUpload" id="avatarUpload" ><label for="avatarUpload">允许用户上传头像</label>
     </td>
    </tr>
    <tr>
-    <td nowrap class="TableData">用户上传头像最大宽度：</td>
+    <td nowrap class="TableContent">用户上传头像最大宽度：</td>
     <td nowrap class="TableData">
         <input type="text" name="avatarWidth" id="avatarWidth" class="BigInput" size="10" maxlength="11" value="">&nbsp;像素
     </td>
    </tr>
    <tr>
-    <td nowrap class="TableData">用户上传头像最大高度：</td>
+    <td nowrap class="TableContent">用户上传头像最大高度：</td>
     <td nowrap class="TableData">
         <input type="text" name="avatarHeight" id="avatarHeight" class="BigInput" size="10" maxlength="11" value="">&nbsp;像素
     </td>
@@ -678,7 +678,7 @@ function deleteAttachPic(flag){
     <td colspan=2 class="TableHeader">其它</td>
    </tr>
    <tr>
-    <td nowrap class="TableData">在线人员显示方式：</td>
+    <td nowrap class="TableContent">在线人员显示方式：</td>
     <td nowrap class="TableData">
         <input type="radio" name="onLineView" id="onLineView1" value="1" ><label for="onLineView1">树形列表</label>
         <input type="radio" name="onLineView" id="onLineView2" value="2" ><label for="onLineView2">平行列表</label>
@@ -688,7 +688,7 @@ function deleteAttachPic(flag){
     <td colspan=2 class="TableHeader">注销提示文字</td>
    </tr>
    <tr>
-    <td nowrap class="TableData" width="150">用户点击注销时，显示这里设置的文字：</td>
+    <td nowrap class="TableContent" width="150">用户点击注销时，显示这里设置的文字：</td>
     <td nowrap class="TableData">
         <textarea name="logOutText" id="logOutText" class="BigInput" cols="44" rows="3"></textarea><br>
     </td>

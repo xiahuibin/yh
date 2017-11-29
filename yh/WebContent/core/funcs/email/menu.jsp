@@ -159,8 +159,8 @@ function toUrl(url){
 <img src="<%=imgPath %>/pageheaders/email.jpg"></img>
 <div id="body">
 	<div class="toolBar" style="padding-bottom: 10px;">
-		<a class="ToolBtn2" onclick="toUrl('<%=contextPath%>/core/funcs/email/new/new.jsp?boxId=0',this)" target="mail_main" title="点击查看新邮件"><span><img src="<%=imgPath%>/cmp/email/nm.png" align="absMiddle">未 读</span></a>
-		<a class="ToolBtn2" onclick="toUrl('new',this);" target="mail_main"><span><img src="<%=imgPath%>/cmp/email/wm.png" align="absMiddle">写 信</span></a>
+		<a class="ToolBtn" onclick="toUrl('<%=contextPath%>/core/funcs/email/new/new.jsp?boxId=0',this)" target="mail_main" title="点击查看新邮件"><span><img src="<%=imgPath%>/cmp/email/nm.png" align="absMiddle">未 读</span></a>
+		<a class="ToolBtn" onclick="toUrl('new',this);" target="mail_main"><span><img src="<%=imgPath%>/cmp/email/wm.png" align="absMiddle">写 信</span></a>
 	</div>
   <table class="BlockTop" width="100%">
     <tr>

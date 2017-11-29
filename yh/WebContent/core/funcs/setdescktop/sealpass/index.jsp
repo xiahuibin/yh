@@ -52,7 +52,7 @@ function loadGrid(){
            {
              header:"操作",
              oprates:[
-                  new YHOprate('<span style="font-size:14px;color:blue;">修改密码<span>',true,function(record,index){
+                  new YHOprate('<span>修改密码<span>',true,function(record,index){
                     if(!data)
                       data = record.getField('sealData').value;
                     modifyPass(record.getField('sealId').value,record.getField('sealName').value);
@@ -91,6 +91,7 @@ function clearSeal()
   $("seal_id").innerHTML="";//印章ID，对应SEAL表的SEAL_ID字段
   $("seal_name").innerHTML=""; //印章名称，对应SEAL表的SEAL_NAME字段
   $("PASS1").value="";//新密码第一次
+
   $("PASS2").value="";//新密码第二次
 }
 function show_info(ID){

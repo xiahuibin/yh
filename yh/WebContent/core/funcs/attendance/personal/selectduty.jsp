@@ -533,7 +533,7 @@ function remark(seqId){
 -->
 <br>
 <a href="javascript:set_year(-1)";  title="上一年"><img  src="<%=imgPath%>/previouspage.gif"></img></a>
-   <select id="year" name="year" style="height:22px;FONT-SIZE: 11pt;" onchange="My_Submit();">
+   <select id="year" name="year" onchange="My_Submit();">
      <%
        for(int i = 2000; i < 2050; i++){
          if(i == year){
@@ -547,7 +547,7 @@ function remark(seqId){
        %>
    </select><a href="javascript:set_year(1);" class="ArrowButtonR" title="下一年"><img src="<%=imgPath%>/nextpage.gif"></img></a>
 <!-- 月  -->
-   <a href="javascript:set_month(-1);" class="ArrowButtonL" title="上一月"><img src="<%=imgPath%>/previouspage.gif"></img></a><select id="month"  style="height:22px;FONT-SIZE: 11pt;"  name="month" onchange="My_Submit();">
+   <a href="javascript:set_month(-1);" class="ArrowButtonL" title="上一月"><img src="<%=imgPath%>/previouspage.gif"></img></a><select id="month" name="month" onchange="My_Submit();">
      <%
        for(int i = 1; i < 13; i++){
          if(i >= 10){

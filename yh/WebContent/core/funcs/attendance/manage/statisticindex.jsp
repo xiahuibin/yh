@@ -69,11 +69,13 @@ function CheckForm(){
 function doOnload(){
   var userId = '<%=userId%>';
   //按用户的管理权限得到所有部门
+
   var deparement = document.getElementById("deparement").value;
   dept(deparement);
   //得到所有排版类型;
   config(userId);
   //初始化日期
+
   var date1Parameters = {
       inputId:'date1',
       property:{isHaveTime:false}
@@ -176,7 +178,7 @@ function Init(){
 部门
 </td>
 <td class="TableData">
-<select id="deparement" name="deparement" style="height:22px;FONT-SIZE: 12pt;">
+<select id="deparement" name="deparement" >
         </select>
 </td>
 <tr>
@@ -184,7 +186,7 @@ function Init(){
 排班类型
 </td>
 <td class="TableData">
-<select id="dutyType" name="dutyType" style="height:22px;FONT-SIZE: 12pt;" >
+<select id="dutyType" name="dutyType"  >
 
 </select>
 </td>

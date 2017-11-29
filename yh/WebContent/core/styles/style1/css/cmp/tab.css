@@ -10,52 +10,40 @@
 	font-size: 13px;
 	background-color: #f4f4f4;
 	width: 100%;
-	height: 28px;
-	PADDING-TOP: 4px;
+	height: 31px;
+	padding-top: 4px;
+	padding-left: 10px;
 	border-bottom: 1px solid #c0c0c0;
 }
 
-#title A {
-	margin-left: 7px;
-	position: relative;
-	top: 5px;
-	font-family: 宋体;
-	font-size: 12px;
-	padding-left: 9px;
-	float: left;
-	overflow: hidden;
-	color: #000;
-	height: 24px;
-	text-decoration: none;
-	background: url(../../img/cmp/tab/menu_top_l.jpg) no-repeat left top;
+#title a {
+	background: url(../../img/cmp/tab/tab1.png) repeat-x;
+	display: block;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    border-radius: 3px 3px 0 0;
+    float: left;
+    margin-right: 5px;
 }
 
 #title a span {
-	padding-right: 15px;
-	padding-left: 2px;
-	float: left;
-	padding-bottom: 3px;
-	cursor: pointer;
-	padding-top: 4px;
-	height: 24px;
-	background: url(../../img/cmp/tab/menu_top_r.jpg) no-repeat right top;
-}
-
-#title a:hover {
-	background: url(../../img/cmp/tab/menu_top_hover_l.jpg) no-repeat left top;
-	font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+    /* width: 73px; */
+    text-align: center;
+    color: #000;
+    padding: 0 20px;
 }
 
 #title a:hover span {
-	color: #000;
-	background: url(../../img/cmp/tab/menu_top_hover_r.jpg) no-repeat right	top;
+	color: #37a8dd;
 }
 
 #title a.active {
-	background: url(../../img/cmp/tab/menu_top_active_l.jpg) no-repeat left top;
-	color: #000;
+    background: url(../../img/cmp/tab/tab2.png) repeat-x;
 }
 
 #title a.active span {
-	background: url(../../img/cmp/tab/menu_top_active_r.jpg) no-repeat right top
+	color: #37a8dd;
+    font-weight: bold;
 }

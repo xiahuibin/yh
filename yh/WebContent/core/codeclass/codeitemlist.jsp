@@ -56,10 +56,11 @@ function confirmDel() {
     </tr>
     <tr class="TableData">
       <td align="center" colspan="4" align="left">
-      <a class="ToolBtn2" href="<%=contextPath %>/core/codeclass/codeiteminput.jsp?classNo=<%=classNo %>&codeClassId=<%=seqId %>" target="contentFrame">
+      <a class="ToolBtn" href="<%=contextPath %>/core/codeclass/codeiteminput.jsp?classNo=<%=classNo %>&codeClassId=<%=seqId %>" target="contentFrame">
         <span>
         <img align="absmiddle" src="<%=contextPath %>/core/styles/imgs/green_plus.gif"></img>
 		        添加代码项
+
         </span>
       </a>   
       </td>

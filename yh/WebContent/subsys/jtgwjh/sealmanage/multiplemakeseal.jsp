@@ -39,6 +39,7 @@ function doInit(){
 function getCounter(){
   var prefix = $("SealID_prefix").value;//印章前缀，目前只读，用当前年份，如：2010
   var mid = $("SealID_mid").value;//印章ID的中间位置部分
+
   if(mid==""){//印章ID中间部分不能为空
    alert("印章ID填写不完整!");
    return;
@@ -50,6 +51,7 @@ function getCounter(){
     var result = rtJsons.rtData;
     if(result != ""){
       $("SealID_counter").value = result;//SealID_counter是界面上的一个hidden项
+
       $("SealID").value = prefix + mid + result;//SealID是合成后的、完整的印章ID
     }
   }
@@ -69,6 +71,7 @@ function SelBMPFile_onclick(){
   var vBmpHeightMM = parseInt(obj.fBmpHeightMM*100)/100; //图片高度（毫米）
   var vBmpWidthMM = parseInt(obj.fBmpWidthMM*100)/100;   //图片宽度（毫米）
   if(vBmpHeightMM == 0  || vBmpWidthMM == 0){            //宽度和高度都为0则中断程序执行
+
     return false;                                        //alert("BMP图片错误");
   }
   
@@ -89,11 +92,13 @@ function SealWriteToKey_onclick(key_flag) {
     return false;
   }
 
- //获取证书信息（证书暂不考虑，此处代码略掉30行，2010-3-31 14:10:43） //不写key的情况，先清空当前activex对象里的印章数据 add by lx 20090420
+ //获取证书信息（证书暂不考虑，此处代码略掉30行，2010-3-31 14:10:43）
+ //不写key的情况，先清空当前activex对象里的印章数据 add by lx 20090420
   if (key_flag == 0) {                                   //对应按钮“生成印章”（印章写入数据库）
     var vID = 0;
     do {
       vID = obj.GetNextSeal(vID);                       //遍历activex控件，找到里面的返回值是1、2、……，还是印章节点的名称？（代表第一、二、……个印章节点）
+
       if(!vID)
         break;
       obj.DelSeal(vID);                                //删除每个印章节点，vID是印章的顺序编号，还是名称？
@@ -101,7 +106,8 @@ function SealWriteToKey_onclick(key_flag) {
   }
   obj.NewSealStart();                                  //准备制章
   SaveSeal();                                          //设置印章数据
-  if(0 != obj.NewSealEnd()) {                          //制章收尾代码（具体含义？）   //alert("载入BMP图片失败");
+  if(0 != obj.NewSealEnd()) {                          //制章收尾代码（具体含义？）
+   //alert("载入BMP图片失败");
    return false;
   }
   
@@ -173,7 +179,8 @@ function insertSeal(){
   }
 }
 
-//清空界面上每一个input框的内容，每一个checkbox设置为不勾选function clear_option(){
+//清空界面上每一个input框的内容，每一个checkbox设置为不勾选
+function clear_option(){
   var obj = document.getElementsByTagName("input");
   for(var i = 0;i < obj.length; i++){
     if(obj[i].type == "text") 
@@ -193,7 +200,8 @@ function SaveSeal() {
     alert("图片宽度和高度只能是数字");
     return false;
   }
- //检查图片高度和宽度是否为0，如果是则中断程序执行  var vBmpHeightMM = parseInt($("SealWidth").value*100)/100; 
+ //检查图片高度和宽度是否为0，如果是则中断程序执行
+  var vBmpHeightMM = parseInt($("SealWidth").value*100)/100; 
   var vBmpWidthMM = parseInt($("SealHeight").value*100)/100;
   if(vBmpHeightMM == 0  || vBmpWidthMM == 0){
     return false;
@@ -202,8 +210,10 @@ function SaveSeal() {
   obj.fSealWidthMM = $("SealWidth").value/$("SealZoom").value;//SealZoom是“印章大小”，实际上是印章放大倍数
   obj.fSealHeightMM = $("SealHeight").value/$("SealZoom").value;//
   obj.strSealName = $("SealName").value;//印章名称
-  obj.strSealID = $("SealID").value;//印章ID（三部分组和而成的ID）  obj.strOpenPwd = $("SealPwd").value;//印章密码
-  obj.strCompName = $("dept").value;//印章单位（实际上存的是部门ID）  obj.lBitCount = $("SealBitCount").value;//图片色彩深度
+  obj.strSealID = $("SealID").value;//印章ID（三部分组和而成的ID）
+  obj.strOpenPwd = $("SealPwd").value;//印章密码
+  obj.strCompName = $("dept").value;//印章单位（实际上存的是部门ID）
+  obj.lBitCount = $("SealBitCount").value;//图片色彩深度
   //安全选项相关，这部分yh移植时暂不考虑
 //  if($("checkboxSign").checked){
 //    obj.blNeedSign = 1;
@@ -420,7 +430,7 @@ function SaveSealToLocal() {
     
    <input type="text" name="deptName" id="deptName" class="BitInput" maxlength="" size="40" onchange="selectDept();">	<br>
    
-   <select id="dept" name="dept" style="height:22px;FONT-SIZE: 12pt;">
+   <select id="dept" name="dept" >
         </select>
     </td>
   </tr>
@@ -428,7 +438,7 @@ function SaveSealToLocal() {
     <tr>
     <td class="TableContent">是否启用</td>
     <td class="TableData">
-   <select id="isFlag" name="isFlag" style="height:22px;FONT-SIZE: 12pt;">
+   <select id="isFlag" name="isFlag" >
    <option value="0">是</option>
       <option value="1">否</option>
         </select>

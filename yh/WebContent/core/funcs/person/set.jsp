@@ -498,7 +498,7 @@ function deptFunc(){
    <tr>
     <td nowrap class="TableData">部门：</td>
     <td nowrap class="TableData">
-      <select id="deptId" name="deptId" style="height:22px;FONT-SIZE: 12pt;">
+      <select id="deptId" name="deptId" >
       <option value=""></option>
         </select>
       &nbsp;如设置为离职人员/外部人员，将对其他用户不可见

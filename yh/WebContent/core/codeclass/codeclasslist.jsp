@@ -40,7 +40,7 @@ function confirmDel() {
     </div>
     <br>
     <div style="width: 100%; text-align: center;">
-    <a class="ToolBtn2" href="<%=contextPath %>/core/codeclass/codeclassinput.jsp" target="contentFrame">
+    <a class="ToolBtn" href="<%=contextPath %>/core/codeclass/codeclassinput.jsp" target="contentFrame">
       <span><img align="absmiddle" src="<%=contextPath %>/core/styles/imgs/green_plus.gif"></img>添加代码主分类</span>
     </a>
     </div>

@@ -4,13 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class StaticData {
-public static final String SOFTTITLE="致美木星智能管理平台";
-public static final String SOFTTITLE_SHORT="致美木星软件";
-public static final String SOFTCOMPANY="致美木星科技有限公司";
-public static final String SOFTCOMPANY_SHORTNAME="木星软件";
+public static final String SOFTTITLE="协同办公系统";
+public static final String SOFTTITLE_SHORT="协同办公系统";
+public static final String SOFTCOMPANY="信息科技有限公司";
+public static final String SOFTCOMPANY_SHORTNAME="协同办公系统";
 public static final String SOFTKEYWORD="致美木星ERP,JCRM,JOA,JCM,进销存";
 
-public static  String VERSIONDESC="致美木星智能管理平台";
+public static  String VERSIONDESC="协同办公系统";
 public static Map versionMap=new HashMap();
 //public static final String SOFTVERSION="A6-CERP*";
 static{

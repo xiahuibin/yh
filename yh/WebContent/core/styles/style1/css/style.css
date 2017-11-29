@@ -28,7 +28,9 @@ form, ul, ol {
   padding:0;
   margin:0;
 }
-
+fieldset {
+	border: 1px solid #cccccc;
+}
 u{
 	text-decoration: none;
 }
@@ -45,7 +47,7 @@ a:link {
 }
 
 a:visited, a:hover, a:active {
-	color:#266E2E;
+	color:#2781CD;
 	text-decoration: none
 }
 
@@ -58,7 +60,9 @@ Table{
 	border-spacing:0px;
 	border-collapse:collapse;
 }
-
+select{
+	padding: 4px 3px;
+}
 a.addfile {
    color:#207BD6;
    text-decoration:none;
@@ -241,7 +245,7 @@ input.BigButtonE {
 
 input.BigInput,textarea.BigInput {
 	font-size: 10pt;
-	padding: 1px 5px; 
+	padding: 5px 5px; 
 	vertical-align: middle; 
 	border: 1px solid #C0BBB4; 
 	background: white url('../img/bg_input_text.png') top left repeat-x;
@@ -255,7 +259,7 @@ input.BigInput:hover,textarea.BigInput:hover {
 
 input.SmallInput,textarea.SmallInput {
 	font-size: 12px;
-	padding: 1px 5px; 
+	padding: 5px 5px; 
 	vertical-align: middle; 
 	border: 1px solid #C0BBB4; 
 	background: white url('../img/bg_input_text.png') top left repeat-x;
@@ -269,7 +273,7 @@ input.SmallInput:hover,textarea.SmallInput:hover {
 
 input.BigStatic,textarea.BigStatic {
 	font-size: 10pt;
-	padding: 1px 5px; 
+	padding: 5px 5px; 
 	vertical-align: middle; 
 	border: 1px solid #C0BBB4; 
 	background: #E0E0E0;
@@ -277,7 +281,7 @@ input.BigStatic,textarea.BigStatic {
 
 input.SmallStatic,textarea.SmallStatic {
 	font-size: 12px;
-	padding: 1px 5px; 
+	padding: 5px 5px; 
 	vertical-align: middle;
 	border: 1px solid #C0BBB4; 
 	background: #E0E0E0;
@@ -770,9 +774,9 @@ _.dtree-rootul {
     font-size: 12px;
 }
 .BlockTop td {
-	padding: 0;
-  background: url("../img/subpages/block_top_bg.png") no-repeat scroll 0 -32px transparent;
-  color: #383838;
+  padding: 0;
+  background-color: #3B9FE1;
+  color: #ffffff;
   font-weight: bold;
   height: 32px;
 }
@@ -855,17 +859,17 @@ table.TableNav {
     line-height: 20px;
 }
 .TableBlock td {
-    height: 30px;
+    height: 40px;
     padding: 3px;
 }
 .TableBlock .TableHeader td, .TableBlock td.TableHeader,
 .TableBlock .TableHeader th, .TableBlock th.TableHeader {
-    background: none repeat scroll 0 0 #f7f8bd;
+    background: none repeat scroll 0 0 #F1F1F1;
     border: 1px solid #CCCCCC;
     color: #383838;
     font-weight: bold;
     height: 30px !important;
-    line-height: 23px;
+    line-height: 40px;
     padding: 0 0 0 5px;
 }
 .TableBlock .TableHeader td.TableCorner {
@@ -892,6 +896,8 @@ table.TableNav {
     background: none repeat scroll 0 0 #F2F2F2;
     border-bottom: 1px solid #CCCCCC;
     border-right: 1px solid #CCCCCC;
+    text-align: right;
+    padding-right: 10px;
 }
 .TableBlock .TableFooter td, .TableBlock .TableControl td, .TableBlock td.TableFooter, .TableBlock td.TableControl {
     background: none repeat scroll 0 0 #FFFFFF;
@@ -970,6 +976,10 @@ a.ToolBtn:hover, a.ToolBtn-active {
 a.ToolBtn:hover span, a.ToolBtn-active span {
   background-position: right -75px;
   color: #FFFFFF !important;
+}
+a.ToolBtn span img{
+	vertical-align: text-top;
+	margin-right: 3px;
 }
 a.ToolBtn2 {
 	height: 25px;

@@ -57,13 +57,14 @@
       <textarea cols=30 name="roleDesc" id="roleDesc" rows=2 class="BigStatic" wrap="yes" readonly></textarea>
       <a href="javascript:;" class="orgAdd" onClick="selectRole(['role','roleDesc'],'','','1')">添加</a>
       <a href="javascript:;" class="orgClear" onClick="$('role').value='';$('roleDesc').value='';">清空</a>
-      <br/>辅助角色仅用于扩展主角色的模块权限    </td>
+      <br/>辅助角色仅用于扩展主角色的模块权限
+    </td>
   </tr>
   
   <tr>
     <td nowrap class="TableContent">部门：</td>
     <td nowrap class="TableContent">
-    <select id="deptId" disabled readonly name="deptId" style="height:22px;FONT-SIZE: 12pt;">
+    <select id="deptId" disabled readonly name="deptId" >
         </select>
       <a href="javascript:selectDeptOther()">指定其它所属部门</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </td>

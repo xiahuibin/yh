@@ -34,6 +34,7 @@
 	      }
 	    else
 	    	{//id=FORMU 的隐藏起来，并把id为FORMULA 和FORMULANAME 的值清空
+
 	    		document.all("FORMU").style.display="none";
 	    		document.form1.FORMULA.value="";
 	    		document.form1.FORMULANAME.value="";
@@ -110,8 +111,8 @@ function updateSalItemInfo(slaItemId){
    <tbody><tr>
     <td class="TableContent" nowrap>薪酬项目名称：<font color="red">*</font></td>
     <td class="TableData" align="left">
-       <input name="ITEM_NAME" id="ITEM_NAME" type="text" >
-       <input name="ITEM_ID" id="ITEM_ID" value="7" type="hidden">
+       <input name="ITEM_NAME" id="ITEM_NAME" type="text" class="BigInput" />
+       <input name="ITEM_ID" id="ITEM_ID" value="7" type="hidden"/>
     </td>
    </tr>
    <tr>

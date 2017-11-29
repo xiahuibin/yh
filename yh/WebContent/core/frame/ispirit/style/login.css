@@ -115,7 +115,7 @@ a.ToolBtn-active span{
    background-position:right -63px;
 }
 
-a.ToolBtn2{
+a.ToolBtn{
    display:inline-block;
    text-decoration:none !important;
    background:url("big_btn_bg.png") left -1px repeat-x;
@@ -123,7 +123,7 @@ a.ToolBtn2{
    font-weight:bold;
    border:1px #91a9bd solid;
 }
-a.ToolBtn2 span{
+a.ToolBtn span{
    display:inline-block;
    padding:0px 10px;
    height:34px;
@@ -131,10 +131,10 @@ a.ToolBtn2 span{
    color:#36434E !important;
    cursor:pointer;
 }
-a.ToolBtn2:hover{
+a.ToolBtn:hover{
    background-position:left -39px;
 }
-a.ToolBtn2:hover span{
+a.ToolBtn:hover span{
    color:#000 !important;
 }
 
