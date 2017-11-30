@@ -394,7 +394,7 @@ function initMenu(el) {
 											YH.cmenu.next().slideToggle();
 											return;
 										}
-										YH.cmenu.next().hide(true);
+										YH.cmenu.next().slideUp();
 									}	
 									YH.cmenu.removeClass("menu-selected");										
 								}
