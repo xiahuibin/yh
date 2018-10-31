@@ -21,7 +21,7 @@ public class Test {
 		String str=YHGuid.getRawGuid();
 		System.out.println(str);
 		System.out.println(System.getProperty("java.library.path"));
-		System.out.println(YHAuthenticator.ciphEncryptStr("root"));
+		System.out.println(YHAuthenticator.ciphEncryptStr("123456"));
 	}
 
 }

@@ -2,7 +2,6 @@ package yh.core.util.auth;
 
 import java.io.UnsupportedEncodingException;
 
-import yh.core.global.YHConst;
 import yh.core.global.YHSysProps;
 
 public class YHPassEncrypt {
@@ -266,7 +265,7 @@ public class YHPassEncrypt {
   }
 
   /* {{{ MD5Transform
-   * state 长度为 4个元素，block长度为 64个元素
+   * state 长度为 4个元素，block长度为 64个元素
 
    * MD5 basic transformation. Transforms state based on block.
    */
@@ -360,7 +359,7 @@ public class YHPassEncrypt {
   }
 
   /* {{{ PHP_MD5Final
-   * digest 长度是16，
+   * digest 长度是16，
 
     MD5 finalization. Ends an MD5 message-digest operation, writing the
     the message digest and zeroizing the context.
@@ -670,6 +669,14 @@ public class YHPassEncrypt {
       return new String(charPass);
     }
   }
+  
+  public static void main(String[] args) {
+	System.out.println(encryptPass("123456"));
+	System.out.println(encryptPass("admin"));
+	System.out.println(encryptPass("fast1234"));
+	System.out.println(encryptPass("123"));
+  }
+  
   
   /**
    * 验证密码
