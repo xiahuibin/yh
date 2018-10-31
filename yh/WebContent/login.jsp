@@ -196,7 +196,7 @@ function loginNamePass() {
 	  var json = getJsonRs(url,pars);
 	  loginComplete(json);
   } catch (e){
-    alert('服务器连接中断');
+    /* alert('服务器连接中断'); */
   }
 }
 

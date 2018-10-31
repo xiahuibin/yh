@@ -789,14 +789,13 @@ ul li {
 }
 
 .top_left {
-	width: 203px;
-    margin: 16px 0 0 23px;
+    margin: 17px 5px 0 23px;
 	float: left;
 }
 
 .top_right {
 	float: right;
-	margin: 22px 15px 0 0;
+	margin: 15px 15px 0 0;
 }
 
 .top_right li {
